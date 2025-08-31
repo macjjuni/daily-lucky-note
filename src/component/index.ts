@@ -1,0 +1,1 @@
+export { default as SajuPalja } from '@/component/SajuPalja/SajuPalja'

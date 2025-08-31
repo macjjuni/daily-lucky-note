@@ -1,0 +1,37 @@
+
+
+.palja {
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+  border: 2px solid #000;
+
+  .palja-pillar {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #000;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    .palja-pillar__block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      font-size: 64px;
+
+      &:first-child {
+        border-bottom: 2px solid #000;
+      }
+
+      &.tree { background: #00B050; }
+      &.earth { background: #FFC000; }
+      &.water { color: #fff; background: #000; }
+      &.fire { background: #ff0000; }
+      &.gold { background: #fff; }
+    }
+  }
+}
