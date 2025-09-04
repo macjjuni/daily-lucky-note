@@ -3,20 +3,11 @@ import { SajuPalja } from '@/component'
 
 const date = new Date();
 
-const nowDate = {
-  year: date.getFullYear(),
-  month: date.getMonth() + 1,
-  day: date.getDate(),
-  hours: date.getHours(),
-}
-
-
-
 export default function Home() {
 
   return (
     <div>
-      <SajuPalja {...nowDate} />
+      <SajuPalja year={1995} month={9} day={7} hours={15}/>
     </div>
   );
 }

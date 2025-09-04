@@ -1,7 +1,7 @@
 import { memo } from 'react'
-import { getGanzhi } from '@/uitl/date'
-import "./SajuPalja.scss"
+import { getGanzhi } from '@/uitl/saju'
 import { getElementClass } from '@/uitl/class'
+import "./SajuPalja.scss"
 
 interface SajuPaljaProps {
   year: number;
@@ -13,15 +13,15 @@ interface SajuPaljaProps {
 const SajuPalja = (props: SajuPaljaProps) => {
 
   const { year, month, day, hours } = getGanzhi(props.year, props.month, props.day, props.hours);
-
+  console.log(hours)
   return (
     <div className="palja">
       <div className="palja-pillar hours">
-        <div className={`palja-pillar__block ${getElementClass(hours.charAt(0))}`}>
-          {hours.charAt(0)}
+        <div className={`palja-pillar__block ${getElementClass(hours?.charAt(0))}`}>
+          {hours?.charAt(0)}
         </div>
-        <div className={`palja-pillar__block ${getElementClass(hours.charAt(1))}`}>
-          {hours.charAt(1)}
+        <div className={`palja-pillar__block ${getElementClass(hours?.charAt(1))}`}>
+          {hours?.charAt(1)}
         </div>
       </div>
       <div className="palja-pillar day">

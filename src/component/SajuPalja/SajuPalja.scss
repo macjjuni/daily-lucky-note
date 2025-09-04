@@ -3,13 +3,13 @@
 .palja {
   display: flex;
   justify-content: space-between;
-  width: 330px;
-  border: 2px solid #000;
+  gap: 8px;
+  border-radius: 8px;
+  width: 320px;
 
   .palja-pillar {
     display: flex;
     flex-direction: column;
-    border-right: 2px solid #000;
 
     &:last-child {
       border-right: none;
@@ -24,14 +24,19 @@
       font-size: 64px;
 
       &:first-child {
-        border-bottom: 2px solid #000;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      &:last-child {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
       }
 
-      &.tree { background: #00B050; }
-      &.earth { background: #FFC000; }
-      &.water { color: #fff; background: #000; }
-      &.fire { background: #ff0000; }
-      &.gold { background: #fff; }
+      &.tree { color: #fff; background: #7ADAA5; }
+      &.earth { color: #fff; background: #FED16A; }
+      &.water { color: #fff; background: #37353E; }
+      &.fire { color: #fff; background: #E43636; }
+      &.gold { color: #37353E; background: #EEEEEE; }
     }
   }
 }
